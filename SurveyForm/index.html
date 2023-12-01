@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./design.css">
+</head>
+<body>
+    
+    <form id="SurveyForm" style="border: 2px solid color(srgb red green blue);">
+ 
+        <label for="" id="" style="padding-left: 30%; "><b>Survey Form</b></label>
+
+        <label for="firstName">FirstName :
+        <input type="text" name="firstName" placeholder="FirstName" required> </label>
+
+        <label for="lastName">LastName :
+        <input type="text" name="lastName" placeholder="LastName" required></label>
+
+        <label for="dob">DOB:         
+        <input type="date" name="dob" required></label>
+
+        <label for="country">Country :
+        <select  id="country">
+            <option value="usa">USA</option>
+            <option value="india">INDIA</option>
+            <option value="uk">UK</option>
+            <option value="china">CHINA</option>
+            <option value="australia">AUSTRALIA</option>
+            <option value="srilanka">SRILANKA</option> 
+            <option value="germany">germany</option>
+            <option value="hong cong">hong cong</option>
+            <option value="bangladesh">Bangladesh</option>  
+        </select> </label>
+
+        <label for="profession">Profession :
+        <input type="text" name="profession" required></label>
+
+        <label for="gender">Gender :
+        <input type="radio" name="gender" value="gender">Male
+        <input type="radio" name="gender" value="gender">Female
+        <input type="radio" name="gender" value="gender">Other</label> 
+
+
+        <label for="email" >Email :
+        <input type="email" name="email" required> </label>
+
+        <label for="mobile">Mobile Number :
+        <input type="tel" name="mobile" maxlength="10" pattern="[0-9]{10,10}" required></label>
+
+        <button type="submit" onclick="submitForm()">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
